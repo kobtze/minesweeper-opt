@@ -82,8 +82,8 @@ table.level-score {
 
 .level-score td.name {
     padding-left: 4px;
-    min-width: 120px;
-    max-width: 120px;
+    min-width: 150px;
+    max-width: 150px;
     text-align: left;
 }
 

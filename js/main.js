@@ -177,7 +177,7 @@ function renderBoard(board) {
 
 function cellClicked(elCell, event, i, j) {
     // debugger;
-
+    console.log(event.button);
     // If RightClicked call cellMarked:
     if (event.button === 2) return cellMarked(elCell, i, j);
 
