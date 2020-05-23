@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Mine Sweeper</title>
+</head>
+
+<body oncontextmenu="return false" onload="initGame()">
+
+    <h1>Minesweeper</h1>
+
+    <div class="dashboard">
+        <p class="levels"><span onclick="adjustLevel(0)">Beginner</span> | <span
+                onclick="adjustLevel(1)">Advanced</span> | <span onclick="adjustLevel(2)">Expert</span></p>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="marks-left">2</td>
+                    <td class="smiley" onclick="initGame()"></td>
+                    <td class="stopwatch">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="minesweeper-mat"></div>
+    <table>
+        <tbody>
+            <tr>
+                <td class="safe-click" onclick="safeClick()"></td>
+                <td class="lives"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <p>Dev: Kobi 'KOBTZE' Donner</p>
+    <table class="level-score">
+        <tr>
+            <td class="rank">1.</td>
+            <td class="name">Kobi Donner</td>
+            <td class="score">8s</td>
+        </tr>
+        <tr>
+            <td class="rank">2.</td>
+            <td class="name">Vered Donner</td>
+            <td class="score">10s</td>
+        </tr>
+        <tr>
+            <td class="rank">3.</td>
+            <td class="name">Maya Donner</td>
+            <td class="score">12s</td>
+        </tr>
+    </table>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bonus.js"></script>
+
+</body>
+
+</html>

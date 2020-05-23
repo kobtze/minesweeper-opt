@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.levels span {
+    color: blue;
+    text-decoration: underline;
+}
+
+.levels span:hover {
+    cursor: pointer;
+}
+
+.stopwatch {
+    text-align: right;
+    font-weight: bold;
+    min-width: 36px;
+    max-width: 36px;
+}
+
+.marks-left {
+    text-align: left;
+    font-weight: bold;
+    min-width: 36px;
+    max-width: 36px;
+}
+
+.smiley {
+    text-align: center;
+}
+.smiley:hover {
+    cursor: pointer;
+}
+
+table, td {
+    border: 1px solid black;
+    font-size: small;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    /* transition-duration: 0.3s; */
+}
+
+
+tr {
+    height: 22px;
+    max-height: 22px;
+}
+
+.minesweeper-mat td {
+    min-width: 22px;
+    max-width: 22px;
+    background-color: rgb(235, 233, 233);
+}
+
+td.lives, td.safe-click {
+    min-width: 66px;
+    max-width: 66px;
+}
+
+td.safe-click:hover {
+    cursor: pointer;
+}
+
+table.level-score {
+    border-collapse: collapse;
+    border: 0px;
+    /* margin-left: initial;
+    margin-right: initial; */
+}
+
+.level-score td {
+    border: 0px;
+    font-weight: initial;
+}
+
+.level-score td.name {
+    padding-left: 4px;
+    min-width: 120px;
+    max-width: 120px;
+    text-align: left;
+}
+
+.nac0 {
+    opacity: 30%;
+}
+
+.nac1 {
+    color: blue;
+}
+
+.nac2 {
+    color: rgb(8, 109, 8);
+}
+
+.nac3 {
+    color: rgb(141, 13, 13);
+}
+
+.nac4 {
+    color: rgb(209, 116, 3);
+}
+
+.nac5 {
+    color: darkslategray;
+}
+
+.nac6 {
+    color:brown;
+}
+
+.nac7 {
+    color: rgb(165, 158, 97);
+}
+
+.nac8 {
+    color:rgb(51, 13, 100);
+}
+
+td.safe {
+    background-color: lightpink;
+    transition-duration: 0.3s;
+}
