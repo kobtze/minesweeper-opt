@@ -176,8 +176,6 @@ function renderBoard(board) {
 };
 
 function cellClicked(elCell, event, i, j) {
-    // debugger;
-    console.log(event.button);
     // If RightClicked call cellMarked:
     if (event.button === 2) return cellMarked(elCell, i, j);
 
@@ -216,7 +214,6 @@ function cellClicked(elCell, event, i, j) {
             if (gGame.lives > 1) return livesDecrease()
             // else continue to the bad news:
             else {
-                console.log('game over!');
                 // Model:
                 gGame.isOn = false;
                 clearInterval(gGame.intervalId);
@@ -256,7 +253,6 @@ function cellClicked(elCell, event, i, j) {
 
             // If all 'clean' cells were exposed > VICTORY!:
             if (gGame.showCount === gLevel.size * gLevel.size - gLevel.mines && gGame.markedCount === gLevel.mines) {
-                console.log('victory!', gGame.secsPassed, 'seconds');
                 // Model:
                 gGame.isOn = false;
                 var elSmiley = document.querySelector('.smiley');
@@ -268,8 +264,6 @@ function cellClicked(elCell, event, i, j) {
             }
         }
     }
-    console.log('Show count: ', gGame.showCount);
-    console.log('Lives: ', gGame.lives);
 };
 
 function cellMarked(elCell, i, j) {

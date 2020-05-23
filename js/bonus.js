@@ -87,8 +87,6 @@ function renderScores(level) {
         if (localStorage.key(i).startsWith(level))
             currLevelRecords.push({ record: localStorage.getItem(localStorage.key(i)), name: localStorage.key(i) });
     }
-
-    console.log(currLevelRecords);
     currLevelRecords.sort(function (a, b) {
         return a.record - b.record;
     });
